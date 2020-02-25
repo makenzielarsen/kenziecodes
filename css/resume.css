@@ -1,0 +1,101 @@
+body,
+html {
+  margin: 0px;
+  background-color: #444;
+  height: 100%;
+  font-family: Copperplate, "Copperplate Gothic Light";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+li img {
+  position: fixed;
+  margin-top: -4px;
+  left: 0;
+  display: inline;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  text-shadow: 2px 2px #111;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  text-shadow: 2px 2px #111;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px #111;
+}
+
+h4 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px #111;
+}
+
+p {
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+#skills {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #444;
+  width: 100%;
+  position: relative;
+}
+
+#skillsItem {
+  float: none;
+}
+
+#resumeContent {
+  height: 1000px;
+}
+
+#parallax {
+  background-image: url("../resources/resumeTopPicture.jpeg");
+  background-size: cover;
+  margin: 0px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 800px;
+}
