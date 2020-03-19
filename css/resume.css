@@ -7,6 +7,8 @@ html {
 }
 
 ul {
+  text-align: center;
+  list-style: inside;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
@@ -19,6 +21,7 @@ ul {
 
 li {
   float: right;
+  padding: 1px;
 }
 
 li a {
@@ -71,6 +74,10 @@ h4 {
 
 p {
   margin: 10px;
+  text-align: center;
+}
+
+.thingsUnder {
   margin-bottom: 50px;
 }
 
@@ -89,7 +96,7 @@ p {
 }
 
 #resumeContent {
-  height: 1000px;
+  height: 1200px;
 }
 
 #parallax {
@@ -102,6 +109,12 @@ p {
   min-height: 100vh;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+  padding: 2px 16px;
+}
+
 @media print {
   body {
     margin: 0;
@@ -109,7 +122,7 @@ p {
     background-color: #fff;
   }
 }
-
+/* 
 @media only screen and (max-width: 600px) {
   body,
   html {
@@ -152,7 +165,6 @@ p {
 
   h1 {
     text-align: center;
-    margin-left: 450px;
     margin-top: 50px;
     color: white;
     text-shadow: 2px 2px #111;
@@ -214,7 +226,6 @@ p {
 
   h1 {
     text-align: center;
-    margin-left: 450px;
     margin-top: 50px;
     color: white;
     text-shadow: 2px 2px #111;
@@ -280,7 +291,6 @@ p {
 
   h1 {
     text-align: center;
-    margin-left: 450px;
     margin-top: 50px;
     color: white;
     text-shadow: 2px 2px #111;
@@ -298,4 +308,4 @@ p {
       background-color: #fff;
     }
   }
-}
+} */
