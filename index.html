@@ -16,7 +16,7 @@
     />
     <link rel="icon" href="resources/peace.gif" type="image/icon type" />
   </head>
-  <body>
+  <body onload="initialize()">
     <nav class="circleBehind">
       <ul>
         <li><a href="fun.html">FUN</a></li>
@@ -27,7 +27,9 @@
     </nav>
     <main>
       <h1>ABOUT ME</h1>
-      <img src="resources/me.jpeg" height="200" />
+      <img src="resources/me.jpeg" height="200" id="me" />
+      <canvas id="canvas"></canvas>
     </main>
   </body>
+  <script src="js/index.js"></script>
 </html>
