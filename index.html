@@ -15,8 +15,12 @@
       media="print"
     />
     <link rel="icon" href="resources/peace.gif" type="image/icon type" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body onload="initialize()">
+  <body>
     <nav class="circleBehind">
       <ul>
         <li><a href="fun.html">FUN</a></li>
@@ -26,9 +30,25 @@
       </ul>
     </nav>
     <main>
-      <h1>ABOUT ME</h1>
-      <img src="resources/me.jpeg" height="200" id="me" />
-      <canvas id="canvas"></canvas>
+      <div class="stickyNotes">
+        <div class="aboutMeDiv" id="aboutMeDiv" onclick="meToFrom()">
+          <h1>ABOUT ME</h1>
+          <img src="resources/me.jpeg" height="20" id="me" />
+        </div>
+        <div class="fromDiv" id="fromDiv" onclick="fromToUSU()">
+          <h1>California &#8594; Utah</h1>
+          <img src="resources/myDrawing.png" height="200" />
+        </div>
+        <div class="usuDiv" id="usuDiv" onclick="USUToMajors()">
+          <p>I am currently a senior at USU set to graduate this May!</p>
+        </div>
+        <div class="majorsDiv" id="majorsDiv" onclick="majorsToMe()">
+          <p>
+            I am majoring in Computer Science and minoring in Anthropology and
+            Management Information Systems
+          </p>
+        </div>
+      </div>
     </main>
   </body>
   <script src="js/index.js"></script>
