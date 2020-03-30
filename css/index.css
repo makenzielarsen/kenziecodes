@@ -57,6 +57,50 @@ main {
   font-family: "Indie Flower", cursive;
 }
 
+[class^="hvr-"] {
+  margin: 0.4em;
+  padding: 1em;
+  cursor: pointer;
+  background: #e1e1e1;
+  text-decoration: none;
+  color: #666;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Curl Bottom Right */
+.hvr-curl-bottom-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-curl-bottom-right:before {
+  pointer-events: none;
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  bottom: 0;
+  right: 0;
+  background: white;
+  /* IE9 */
+  background: linear-gradient(315deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.hvr-curl-bottom-right:hover:before,
+.hvr-curl-bottom-right:focus:before,
+.hvr-curl-bottom-right:active:before {
+  width: 100px;
+  height: 100px;
+}
+
 .aboutMeDiv {
   background: #ece6d3;
   display: flex;
@@ -67,7 +111,6 @@ main {
   height: 310px;
   width: 310px;
   transition: 0.3s;
-  box-shadow: 3px 3px black;
   padding-left: 5px;
 }
 
@@ -92,7 +135,6 @@ main {
   height: 310px;
   width: 310px;
   transition: 0.3s;
-  box-shadow: 3px 3px black;
   padding-left: 5px;
 }
 
@@ -104,6 +146,7 @@ main {
 
 .usuDiv {
   display: none;
+  flex-direction: column;
   background: lightsteelblue;
   position: absolute;
   top: 0;
@@ -111,12 +154,17 @@ main {
   height: 300px;
   width: 305px;
   transition: 0.3s;
-  box-shadow: 3px 3px black;
   padding: 10px 0px 0px 10px;
+}
+
+.usuDiv img {
+  width: 250px;
+  margin-left: 50px;
 }
 
 .majorsDiv {
   display: none;
+  flex-direction: column;
   background: lightpink;
   position: absolute;
   top: 0;
@@ -124,8 +172,13 @@ main {
   height: 300px;
   width: 305px;
   transition: 0.3s;
-  box-shadow: 3px 3px black;
   padding: 10px 0px 0px 10px;
+}
+
+.majorsDiv img {
+  width: 250px;
+  margin-left: 50px;
+  margin-top: -5px;
 }
 
 @media print {
