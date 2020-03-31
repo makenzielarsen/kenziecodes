@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>KenzieCodes</title>
     <link rel="stylesheet" type="text/css" href="css/fun.css" media="screen" />
@@ -9,9 +9,14 @@
       href="css/printIndex.css"
       media="print"
     />
-    <link rel="icon" href="resources/peace.gif" type="image/icon type" />
+    <link rel="icon" href="resources/peace.gif" type="image/icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/fun.js"></script>
+    <meta charset="utf-8" />
+    <meta name="description" content="A website about Makenzie Larsen" />
+    <meta name="keywords" content="Developer,Frontend,HTML,CSS,Javascript" />
+    <meta name="author" content="Makenzie Larsen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <nav>
@@ -19,29 +24,72 @@
         <li><a>FUN</a></li>
         <li><a href="resume.html">RESUME</a></li>
         <li><a href="index.html">HOME</a></li>
-        <li><img src="resources/peace.gif" height="50" /></li>
+        <li>
+          <img
+            src="resources/peace.gif"
+            height="50"
+            alt="A Colorful Peace Sign"
+            onclick="window.location.href = 'index.html';"
+          />
+        </li>
       </ul>
     </nav>
     <main>
       <div id="leftFloat">
-        <div id="titleImagePair">
+        <div class="titleImagePair">
           <h1>Memes I Like</h1>
-          <img id="titleImage" src="resources/jake.gif" />
+          <img
+            class="titleImage"
+            src="resources/jake.gif"
+            alt="Jake the Dog Laughing"
+          />
         </div>
-        <img id="imageDisplay" src="resources/internetspeedsmeme.jpeg" />
+        <img
+          id="imageDisplay"
+          src="resources/internetspeedsmeme.jpeg"
+          alt="Internet Speed Meme"
+        />
         <div id="thumbnailPictures">
-          <img id="thumbnailImage" src="resources/internetspeedsmeme.jpeg" />
-          <img id="thumbnailImage" src="resources/scrollpagememe.png" />
-          <img id="thumbnailImage" src="resources/usabilitymeme.jpeg" />
-          <img id="thumbnailImage" src="resources/mobileoptimizationmeme.jpg" />
-          <img id="thumbnailImage" src="resources/mobilenavmeme.jpeg" />
-          <img id="thumbnailImage" src="resources/noblogmeme.jpg" />
+          <img
+            class="thumbnailImage"
+            src="resources/internetspeedsmeme.jpeg"
+            alt="Internet Speed Meme"
+          />
+          <img
+            class="thumbnailImage"
+            src="resources/scrollpagememe.png"
+            alt="Scrolling Page Meme"
+          />
+          <img
+            class="thumbnailImage"
+            src="resources/usabilitymeme.jpeg"
+            alt="Usability Meme"
+          />
+          <img
+            class="thumbnailImage"
+            src="resources/mobileoptimizationmeme.jpg"
+            alt="Mobile Optimization Meme"
+          />
+          <img
+            class="thumbnailImage"
+            src="resources/mobilenavmeme.jpeg"
+            alt="Mobile Navigation Meme"
+          />
+          <img
+            class="thumbnailImage"
+            src="resources/noblogmeme.jpg"
+            alt="No Blog Meme"
+          />
         </div>
       </div>
       <div id="floatRight">
-        <div id="titleImagePair">
+        <div class="titleImagePair">
           <h1>Find Your Own Memes!</h1>
-          <img id="titleImage" src="resources/puppy.gif" />
+          <img
+            class="titleImage"
+            src="resources/puppy.gif"
+            alt="Puppy Laughing"
+          />
         </div>
         <form method="get" action="http://www.google.com/search">
           <div id="search">
@@ -56,5 +104,12 @@
         </form>
       </div>
     </main>
+    <footer id="contactMe">
+      <p>Copyright &copy; 2020 Makenzie Larsen</p>
+      <p>
+        Email Me:
+        <a href="mailto:makenzie.l.larsen@gmail.com">HERE</a>.
+      </p>
+    </footer>
   </body>
 </html>

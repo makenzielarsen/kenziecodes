@@ -41,7 +41,6 @@ li a:hover {
 
 li img {
   position: fixed;
-  margin-top: -4px;
   margin-left: 0px;
   left: 0;
   display: inline;
@@ -49,6 +48,7 @@ li img {
 
 main {
   margin-top: 15%;
+  height: 97%;
 }
 
 .stickyNotes {
@@ -179,6 +179,16 @@ main {
   width: 250px;
   margin-left: 50px;
   margin-top: -5px;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  margin-left: 995px;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 @media print {

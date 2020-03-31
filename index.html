@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>KenzieCodes</title>
     <link
@@ -14,19 +14,32 @@
       href="css/printIndex.css"
       media="print"
     />
-    <link rel="icon" href="resources/peace.gif" type="image/icon type" />
+    <link rel="icon" href="resources/peace.gif" type="image/icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
+    <meta charset="utf-8" />
+    <meta name="description" content="A website about Makenzie Larsen" />
+    <meta name="keywords" content="Developer,Frontend,HTML,CSS,Javascript" />
+    <meta name="author" content="Makenzie Larsen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/index.js"></script>
   </head>
   <body>
     <nav class="circleBehind">
       <ul>
         <li><a href="fun.html">FUN</a></li>
         <li><a href="resume.html">RESUME</a></li>
-        <li><a dis>HOME</a></li>
-        <li><img src="resources/peace.gif" height="50" /></li>
+        <li><a>HOME</a></li>
+        <li>
+          <img
+            src="resources/peace.gif"
+            height="50"
+            alt="Colorful Peace Sign"
+            onclick="window.location.href = 'index.html';"
+          />
+        </li>
       </ul>
     </nav>
     <main>
@@ -37,7 +50,12 @@
           onclick="meToFrom()"
         >
           <h1>ABOUT ME</h1>
-          <img src="resources/me.jpeg" height="20" id="me" />
+          <img
+            src="resources/me.jpeg"
+            height="20"
+            id="me"
+            alt="A Picture of Me!"
+          />
         </div>
         <div
           class="fromDiv hvr-curl-bottom-right"
@@ -45,7 +63,11 @@
           onclick="fromToUSU()"
         >
           <h1>California &#8594; Utah</h1>
-          <img src="resources/myDrawing.png" height="200" />
+          <img
+            src="resources/myDrawing.png"
+            height="200"
+            alt="A Drawing of a Plane Flying From California To Utah"
+          />
         </div>
         <div
           class="usuDiv hvr-curl-bottom-right"
@@ -53,7 +75,7 @@
           onclick="USUToMajors()"
         >
           <p>I am currently a senior at USU set to graduate this May!</p>
-          <img src="resources/cap.gif" height="200" />
+          <img src="resources/cap.gif" height="200" alt="A Graduation Cap" />
         </div>
         <div
           class="majorsDiv hvr-curl-bottom-right"
@@ -64,10 +86,20 @@
             I am majoring in Computer Science and minoring in Anthropology and
             Management Information Systems
           </p>
-          <img src="resources/computer.png" height="200" />
+          <img
+            src="resources/computer.png"
+            height="200"
+            alt="A Penguin At A Computer"
+          />
         </div>
       </div>
     </main>
+    <footer id="contactMe">
+      <p>Copyright &copy; 2020 Makenzie Larsen</p>
+      <p>
+        Email Me:
+        <a href="mailto:makenzie.l.larsen@gmail.com">HERE</a>.
+      </p>
+    </footer>
   </body>
-  <script src="js/index.js"></script>
 </html>

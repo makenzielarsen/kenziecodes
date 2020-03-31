@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>KenzieCodes</title>
     <link
@@ -14,11 +14,16 @@
       href="css/printIndex.css"
       media="print"
     />
-    <link rel="icon" href="resources/peace.gif" type="image/icon type" />
+    <link rel="icon" href="resources/peace.gif" type="image/icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
+    <meta charset="utf-8" />
+    <meta name="description" content="A website about Makenzie Larsen" />
+    <meta name="keywords" content="Developer,Frontend,HTML,CSS,Javascript" />
+    <meta name="author" content="Makenzie Larsen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <nav>
@@ -26,10 +31,17 @@
         <li><a href="fun.html">FUN</a></li>
         <li><a>RESUME</a></li>
         <li><a href="index.html">HOME</a></li>
-        <li><img src="resources/peace.gif" height="50" /></li>
+        <li>
+          <img
+            src="resources/peace.gif"
+            height="50"
+            alt="A Colorful Peace Sign"
+            onclick="window.location.href = 'index.html';"
+          />
+        </li>
       </ul>
     </nav>
-    <div id="parallax"></div>
+    <div class="parallax"></div>
     <main id="paper">
       <div id="resumeContent">
         <h1>Makenzie Larsen</h1>
@@ -89,19 +101,26 @@
           <h2>Skills</h2>
           <div>
             <ul id="skills">
-              <li id="skillsItem">Python</li>
-              <li id="skillsItem">HTML and CSS</li>
-              <li id="skillsItem">C++</li>
-              <li id="skillsItem">SQL</li>
-              <li id="skillsItem">Java</li>
-              <li id="skillsItem">JavaScript</li>
-              <li id="skillsItem">Swift</li>
-              <li id="skillsItem">Vim</li>
+              <li class="skillsItem">Python</li>
+              <li class="skillsItem">HTML and CSS</li>
+              <li class="skillsItem">C++</li>
+              <li class="skillsItem">SQL</li>
+              <li class="skillsItem">Java</li>
+              <li class="skillsItem">JavaScript</li>
+              <li class="skillsItem">Swift</li>
+              <li class="skillsItem">Vim</li>
             </ul>
           </div>
         </div>
       </div>
     </main>
-    <div id="parallax"></div>
+    <footer id="contactMe">
+      <p>Copyright &copy; 2020 Makenzie Larsen</p>
+      <p>
+        Email Me:
+        <a href="mailto:makenzie.l.larsen@gmail.com">HERE</a>.
+      </p>
+    </footer>
+    <div class="parallax"></div>
   </body>
 </html>

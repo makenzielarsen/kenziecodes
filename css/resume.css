@@ -79,26 +79,26 @@ h1 {
   text-align: center;
   margin-top: 50px;
   color: black;
-  font-weight: 1000;
+  font-weight: bold;
 }
 
 h2 {
   text-align: center;
   margin-top: 50px;
   color: black;
-  font-weight: 2000;
+  font-weight: bold;
 }
 
 h3 {
   text-align: center;
   color: black;
-  font-weight: 2000;
+  font-weight: bold;
 }
 
 h4 {
   text-align: center;
   color: black;
-  font-weight: 2000;
+  font-weight: bold;
 }
 
 p {
@@ -119,7 +119,7 @@ p {
   font-family: "Indie Flower", cursive;
 }
 
-#skillsItem {
+.skillsItem {
   float: none;
   font-family: "Indie Flower", cursive;
 }
@@ -128,7 +128,7 @@ p {
   height: 1200px;
 }
 
-#parallax {
+.parallax {
   min-height: 100vh;
 }
 
@@ -136,6 +136,17 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.3s;
   padding: 2px 16px;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  margin-left: 995px;
+  font-family: Copperplate, "Copperplate Gothic Light";
+}
+
+footer a {
+  text-decoration: none;
 }
 
 @media print {
@@ -228,26 +239,26 @@ p {
     text-align: center;
     margin-top: 50px;
     color: black;
-    font-weight: 1000;
+    font-weight: bold;
   }
 
   h2 {
     text-align: center;
     margin-top: 50px;
     color: black;
-    font-weight: 2000;
+    font-weight: bold;
   }
 
   h3 {
     text-align: center;
     color: black;
-    font-weight: 2000;
+    font-weight: bold;
   }
 
   h4 {
     text-align: center;
     color: black;
-    font-weight: 2000;
+    font-weight: bold;
   }
 
   p {
@@ -268,7 +279,7 @@ p {
     font-family: "Indie Flower", cursive;
   }
 
-  #skillsItem {
+  .skillsItem {
     float: none;
     font-family: "Indie Flower", cursive;
   }
@@ -277,7 +288,7 @@ p {
     height: 1200px;
   }
 
-  #parallax {
+  .parallax {
     min-height: 100vh;
   }
 
@@ -378,26 +389,26 @@ p {
     text-align: center;
     margin-top: 50px;
     color: black;
-    font-weight: 1000;
+    font-weight: bold;
   }
 
   h2 {
     text-align: center;
     margin-top: 50px;
     color: black;
-    font-weight: 2000;
+    font-weight: bold;
   }
 
   h3 {
     text-align: center;
     color: black;
-    font-weight: 2000;
+    font-weight: bold;
   }
 
   h4 {
     text-align: center;
     color: black;
-    font-weight: 2000;
+    font-weight: bold;
   }
 
   p {
@@ -418,7 +429,7 @@ p {
     font-family: "Indie Flower", cursive;
   }
 
-  #skillsItem {
+  .skillsItem {
     float: none;
     font-family: "Indie Flower", cursive;
   }
@@ -427,7 +438,7 @@ p {
     height: 1200px;
   }
 
-  #parallax {
+  .parallax {
     min-height: 100vh;
   }
 
@@ -435,6 +446,12 @@ p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
     padding: 2px 16px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
   }
 
   @media print {
@@ -528,29 +545,29 @@ p {
     text-align: center;
     margin-top: 50px;
     color: black;
-    font-weight: 1000;
+    font-weight: bold;
   }
 
   h2 {
     text-align: center;
     margin-top: 50px;
     color: black;
-    font-weight: 2000;
+    font-weight: bold;
   }
 
   h3 {
     text-align: center;
     color: black;
-    font-weight: 2000;
+    font-weight: bold;
   }
 
   h4 {
     text-align: center;
     color: black;
-    font-weight: 2000;
+    font-weight: bold;
   }
 
-  p {
+  main p {
     margin: 10px;
     font-family: "Indie Flower", cursive;
     font-size: 20px;
@@ -568,7 +585,7 @@ p {
     font-family: "Indie Flower", cursive;
   }
 
-  #skillsItem {
+  .skillsItem {
     float: none;
     font-family: "Indie Flower", cursive;
   }
@@ -577,7 +594,7 @@ p {
     height: 1200px;
   }
 
-  #parallax {
+  .parallax {
     min-height: 100vh;
   }
 
