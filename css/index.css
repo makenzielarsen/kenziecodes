@@ -188,13 +188,16 @@ main {
     background-color: #fff;
   }
 }
-/* 
+
 @media only screen and (max-width: 600px) {
   body,
   html {
     margin: 0px;
-    background-color: #444;
-    height: 100%;
+    background-image: url("../resources/resumeTopPicture.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80%;
     font-family: Copperplate, "Copperplate Gothic Light";
   }
 
@@ -211,6 +214,7 @@ main {
 
   li {
     float: right;
+    transition: 0.3s;
   }
 
   li a {
@@ -221,10 +225,6 @@ main {
     text-decoration: none;
   }
 
-  li a:hover {
-    background-color: #0277bd;
-  }
-
   li img {
     position: fixed;
     margin-top: -4px;
@@ -233,17 +233,94 @@ main {
     display: inline;
   }
 
-  h1 {
-    text-align: center;
-    margin-left: 450px;
-    margin-top: 50px;
-    color: white;
-    text-shadow: 2px 2px #111;
+  main {
+    margin-top: 15%;
   }
 
-  img {
-    margin-left: 200px;
-    margin-top: 50px;
+  .stickyNotes {
+    position: relative;
+    margin-left: 38%;
+    font-family: "Indie Flower", cursive;
+  }
+
+  .aboutMeDiv {
+    background: #ece6d3;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 310px;
+    width: 310px;
+    transition: 0.3s;
+    padding-left: 5px;
+  }
+
+  .aboutMeDiv h1 {
+    margin-top: 5px;
+  }
+
+  .aboutMeDiv img {
+    height: 200px;
+    width: 150px;
+    margin-left: 140px;
+    margin-top: 15px;
+  }
+
+  .fromDiv {
+    display: none;
+    flex-direction: column;
+    background: coral;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 310px;
+    width: 310px;
+    transition: 0.3s;
+    padding-left: 5px;
+  }
+
+  .fromDiv img {
+    height: 250px;
+    width: 200px;
+    margin-left: 100px;
+  }
+
+  .usuDiv {
+    display: none;
+    flex-direction: column;
+    background: lightsteelblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 305px;
+    transition: 0.3s;
+    padding: 10px 0px 0px 10px;
+  }
+
+  .usuDiv img {
+    width: 250px;
+    margin-left: 50px;
+  }
+
+  .majorsDiv {
+    display: none;
+    flex-direction: column;
+    background: lightpink;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 305px;
+    transition: 0.3s;
+    padding: 10px 0px 0px 10px;
+  }
+
+  .majorsDiv img {
+    width: 250px;
+    margin-left: 50px;
+    margin-top: -5px;
   }
 
   @media print {
@@ -259,8 +336,11 @@ main {
   body,
   html {
     margin: 0px;
-    background-color: #444;
-    height: 100%;
+    background-image: url("../resources/resumeTopPicture.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80%;
     font-family: Copperplate, "Copperplate Gothic Light";
   }
 
@@ -277,6 +357,7 @@ main {
 
   li {
     float: right;
+    transition: 0.3s;
   }
 
   li a {
@@ -287,10 +368,6 @@ main {
     text-decoration: none;
   }
 
-  li a:hover {
-    background-color: #0277bd;
-  }
-
   li img {
     position: fixed;
     margin-top: -4px;
@@ -299,17 +376,94 @@ main {
     display: inline;
   }
 
-  h1 {
-    text-align: center;
-    margin-left: 450px;
-    margin-top: 50px;
-    color: white;
-    text-shadow: 2px 2px #111;
+  main {
+    margin-top: 15%;
   }
 
-  img {
-    margin-left: 200px;
-    margin-top: 50px;
+  .stickyNotes {
+    position: relative;
+    margin-left: 38%;
+    font-family: "Indie Flower", cursive;
+  }
+
+  .aboutMeDiv {
+    background: #ece6d3;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 310px;
+    width: 310px;
+    transition: 0.3s;
+    padding-left: 5px;
+  }
+
+  .aboutMeDiv h1 {
+    margin-top: 5px;
+  }
+
+  .aboutMeDiv img {
+    height: 200px;
+    width: 150px;
+    margin-left: 140px;
+    margin-top: 15px;
+  }
+
+  .fromDiv {
+    display: none;
+    flex-direction: column;
+    background: coral;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 310px;
+    width: 310px;
+    transition: 0.3s;
+    padding-left: 5px;
+  }
+
+  .fromDiv img {
+    height: 250px;
+    width: 200px;
+    margin-left: 100px;
+  }
+
+  .usuDiv {
+    display: none;
+    flex-direction: column;
+    background: lightsteelblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 305px;
+    transition: 0.3s;
+    padding: 10px 0px 0px 10px;
+  }
+
+  .usuDiv img {
+    width: 250px;
+    margin-left: 50px;
+  }
+
+  .majorsDiv {
+    display: none;
+    flex-direction: column;
+    background: lightpink;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 305px;
+    transition: 0.3s;
+    padding: 10px 0px 0px 10px;
+  }
+
+  .majorsDiv img {
+    width: 250px;
+    margin-left: 50px;
+    margin-top: -5px;
   }
 
   @media print {
@@ -325,8 +479,11 @@ main {
   body,
   html {
     margin: 0px;
-    background-color: #444;
-    height: 100%;
+    background-image: url("../resources/resumeTopPicture.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80%;
     font-family: Copperplate, "Copperplate Gothic Light";
   }
 
@@ -343,6 +500,7 @@ main {
 
   li {
     float: right;
+    transition: 0.3s;
   }
 
   li a {
@@ -353,10 +511,6 @@ main {
     text-decoration: none;
   }
 
-  li a:hover {
-    background-color: #0277bd;
-  }
-
   li img {
     position: fixed;
     margin-top: -4px;
@@ -365,12 +519,94 @@ main {
     display: inline;
   }
 
-  h1 {
-    text-align: center;
-    margin-left: 450px;
-    margin-top: 50px;
-    color: white;
-    text-shadow: 2px 2px #111;
+  main {
+    margin-top: 15%;
+  }
+
+  .stickyNotes {
+    position: relative;
+    margin-left: 38%;
+    font-family: "Indie Flower", cursive;
+  }
+
+  .aboutMeDiv {
+    background: #ece6d3;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 310px;
+    width: 310px;
+    transition: 0.3s;
+    padding-left: 5px;
+  }
+
+  .aboutMeDiv h1 {
+    margin-top: 5px;
+  }
+
+  .aboutMeDiv img {
+    height: 200px;
+    width: 150px;
+    margin-left: 140px;
+    margin-top: 15px;
+  }
+
+  .fromDiv {
+    display: none;
+    flex-direction: column;
+    background: coral;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 310px;
+    width: 310px;
+    transition: 0.3s;
+    padding-left: 5px;
+  }
+
+  .fromDiv img {
+    height: 250px;
+    width: 200px;
+    margin-left: 100px;
+  }
+
+  .usuDiv {
+    display: none;
+    flex-direction: column;
+    background: lightsteelblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 305px;
+    transition: 0.3s;
+    padding: 10px 0px 0px 10px;
+  }
+
+  .usuDiv img {
+    width: 250px;
+    margin-left: 50px;
+  }
+
+  .majorsDiv {
+    display: none;
+    flex-direction: column;
+    background: lightpink;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 305px;
+    transition: 0.3s;
+    padding: 10px 0px 0px 10px;
+  }
+
+  .majorsDiv img {
+    width: 250px;
+    margin-left: 50px;
+    margin-top: -5px;
   }
 
   @media print {
@@ -380,4 +616,4 @@ main {
       background-color: #fff;
     }
   }
-} */
+}

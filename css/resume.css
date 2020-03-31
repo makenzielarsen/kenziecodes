@@ -145,17 +145,22 @@ p {
     background-color: #fff;
   }
 }
-/* 
+
 @media only screen and (max-width: 600px) {
   body,
   html {
     margin: 0px;
-    background-color: #444;
+    background-image: url("../resources/resumeTopPicture.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100%;
-    font-family: Copperplate, "Copperplate Gothic Light";
+    font-family: "Indie Flower", cursive;
   }
 
   ul {
+    text-align: center;
+    list-style: inside;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -168,6 +173,8 @@ p {
 
   li {
     float: right;
+    padding: 1px;
+    font-family: Copperplate, "Copperplate Gothic Light";
   }
 
   li a {
@@ -178,24 +185,106 @@ p {
     text-decoration: none;
   }
 
+  li a:hover {
+    background-image: linear-gradient(#0277bd, teal);
+    border: 1px solid white;
+    border-radius: 10%;
+  }
+
   li img {
     position: fixed;
     margin-top: -4px;
-    margin-left: 0px;
     left: 0;
     display: inline;
+  }
+
+  main {
+    width: 50%;
+    margin-left: 300px;
+    background-color: #ece6d3;
+    height: 1750px;
+  }
+
+  #paper::before {
+    content: "";
+    width: 2px;
+    height: 1750px;
+    position: absolute;
+    top: 600px;
+    left: 330px;
+    background-color: rgba(255, 0, 0, 0.6);
+  }
+
+  .pattern {
+    height: 1550px;
+    background-image: repeating-linear-gradient(
+      #ece6d3 0px,
+      #ece6d3 24px,
+      teal 25px
+    );
   }
 
   h1 {
     text-align: center;
     margin-top: 50px;
-    color: white;
-    text-shadow: 2px 2px #111;
+    color: black;
+    font-weight: 1000;
   }
 
-  img {
-    margin-left: 200px;
+  h2 {
+    text-align: center;
     margin-top: 50px;
+    color: black;
+    font-weight: 2000;
+  }
+
+  h3 {
+    text-align: center;
+    color: black;
+    font-weight: 2000;
+  }
+
+  h4 {
+    text-align: center;
+    color: black;
+    font-weight: 2000;
+  }
+
+  p {
+    margin: 10px;
+    font-family: "Indie Flower", cursive;
+    font-size: 20px;
+    padding-left: 30px;
+  }
+
+  #skills {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    font-family: "Indie Flower", cursive;
+  }
+
+  #skillsItem {
+    float: none;
+    font-family: "Indie Flower", cursive;
+  }
+
+  #resumeContent {
+    height: 1200px;
+  }
+
+  #parallax {
+    min-height: 100vh;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    padding: 2px 16px;
   }
 
   @media print {
@@ -211,12 +300,17 @@ p {
   body,
   html {
     margin: 0px;
-    background-color: #444;
+    background-image: url("../resources/resumeTopPicture.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100%;
-    font-family: Copperplate, "Copperplate Gothic Light";
+    font-family: "Indie Flower", cursive;
   }
 
   ul {
+    text-align: center;
+    list-style: inside;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -229,6 +323,8 @@ p {
 
   li {
     float: right;
+    padding: 1px;
+    font-family: Copperplate, "Copperplate Gothic Light";
   }
 
   li a {
@@ -239,24 +335,106 @@ p {
     text-decoration: none;
   }
 
+  li a:hover {
+    background-image: linear-gradient(#0277bd, teal);
+    border: 1px solid white;
+    border-radius: 10%;
+  }
+
   li img {
     position: fixed;
     margin-top: -4px;
-    margin-left: 0px;
     left: 0;
     display: inline;
+  }
+
+  main {
+    width: 50%;
+    margin-left: 300px;
+    background-color: #ece6d3;
+    height: 1750px;
+  }
+
+  #paper::before {
+    content: "";
+    width: 2px;
+    height: 1750px;
+    position: absolute;
+    top: 770px;
+    left: 330px;
+    background-color: rgba(255, 0, 0, 0.6);
+  }
+
+  .pattern {
+    height: 1550px;
+    background-image: repeating-linear-gradient(
+      #ece6d3 0px,
+      #ece6d3 24px,
+      teal 25px
+    );
   }
 
   h1 {
     text-align: center;
     margin-top: 50px;
-    color: white;
-    text-shadow: 2px 2px #111;
+    color: black;
+    font-weight: 1000;
   }
 
-  img {
-    margin-left: 200px;
+  h2 {
+    text-align: center;
     margin-top: 50px;
+    color: black;
+    font-weight: 2000;
+  }
+
+  h3 {
+    text-align: center;
+    color: black;
+    font-weight: 2000;
+  }
+
+  h4 {
+    text-align: center;
+    color: black;
+    font-weight: 2000;
+  }
+
+  p {
+    margin: 10px;
+    font-family: "Indie Flower", cursive;
+    font-size: 20px;
+    padding-left: 30px;
+  }
+
+  #skills {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    font-family: "Indie Flower", cursive;
+  }
+
+  #skillsItem {
+    float: none;
+    font-family: "Indie Flower", cursive;
+  }
+
+  #resumeContent {
+    height: 1200px;
+  }
+
+  #parallax {
+    min-height: 100vh;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    padding: 2px 16px;
   }
 
   @media print {
@@ -272,12 +450,17 @@ p {
   body,
   html {
     margin: 0px;
-    background-color: #444;
+    background-image: url("../resources/resumeTopPicture.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100%;
-    font-family: Copperplate, "Copperplate Gothic Light";
+    font-family: "Indie Flower", cursive;
   }
 
   ul {
+    text-align: center;
+    list-style: inside;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -290,6 +473,8 @@ p {
 
   li {
     float: right;
+    padding: 1px;
+    font-family: Copperplate, "Copperplate Gothic Light";
   }
 
   li a {
@@ -301,27 +486,105 @@ p {
   }
 
   li a:hover {
-    background-color: #0277bd;
+    background-image: linear-gradient(#0277bd, teal);
+    border: 1px solid white;
+    border-radius: 10%;
   }
 
   li img {
     position: fixed;
     margin-top: -4px;
-    margin-left: 0px;
     left: 0;
     display: inline;
+  }
+
+  main {
+    width: 50%;
+    margin-left: 300px;
+    background-color: #ece6d3;
+    height: 1750px;
+  }
+
+  #paper::before {
+    content: "";
+    width: 2px;
+    height: 1750px;
+    position: absolute;
+    top: 770px;
+    left: 330px;
+    background-color: rgba(255, 0, 0, 0.6);
+  }
+
+  .pattern {
+    height: 1550px;
+    background-image: repeating-linear-gradient(
+      #ece6d3 0px,
+      #ece6d3 24px,
+      teal 25px
+    );
   }
 
   h1 {
     text-align: center;
     margin-top: 50px;
-    color: white;
-    text-shadow: 2px 2px #111;
+    color: black;
+    font-weight: 1000;
   }
 
-  img {
-    margin-left: 200px;
+  h2 {
+    text-align: center;
     margin-top: 50px;
+    color: black;
+    font-weight: 2000;
+  }
+
+  h3 {
+    text-align: center;
+    color: black;
+    font-weight: 2000;
+  }
+
+  h4 {
+    text-align: center;
+    color: black;
+    font-weight: 2000;
+  }
+
+  p {
+    margin: 10px;
+    font-family: "Indie Flower", cursive;
+    font-size: 20px;
+    padding-left: 30px;
+  }
+
+  #skills {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    font-family: "Indie Flower", cursive;
+  }
+
+  #skillsItem {
+    float: none;
+    font-family: "Indie Flower", cursive;
+  }
+
+  #resumeContent {
+    height: 1200px;
+  }
+
+  #parallax {
+    min-height: 100vh;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    padding: 2px 16px;
   }
 
   @media print {
@@ -331,4 +594,4 @@ p {
       background-color: #fff;
     }
   }
-} */
+}
