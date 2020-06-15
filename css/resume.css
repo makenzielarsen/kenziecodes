@@ -64,7 +64,7 @@ main {
 #paper::before {
   content: "";
   width: 2px;
-  height: 108%;
+  height: 110%;
   position: absolute;
   top: 0%;
   left: 4%;
