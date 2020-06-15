@@ -11,6 +11,8 @@ html {
 
 ul {
   list-style-type: none;
+  list-style: inside;
+  list-style-type: none;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
@@ -22,7 +24,9 @@ ul {
 
 li {
   float: right;
-  transition: 0.3s;
+  /* transition: 0.3s; */
+  padding: 1px;
+  font-family: Copperplate, "Copperplate Gothic Light";
 }
 
 li a {
@@ -41,7 +45,7 @@ li a:hover {
 
 li img {
   position: fixed;
-  margin-left: 0px;
+  margin-top: -4px;
   left: 0;
   display: inline;
 }
