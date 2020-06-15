@@ -61,13 +61,13 @@ main {
   width: 2px;
   height: 1750px;
   position: absolute;
-  top: 80%;
-  left: 30%;
+  top: 20%;
+  left: 28%;
   background-color: rgba(255, 0, 0, 0.6);
 }
 
 .pattern {
-  height: 80%;
+  height: 20%;
   background-image: repeating-linear-gradient(
     #ece6d3 0px,
     #ece6d3 24px,
