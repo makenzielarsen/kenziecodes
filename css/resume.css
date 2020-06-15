@@ -129,10 +129,6 @@ p {
   font-family: "Indie Flower", cursive;
 }
 
-#resumeContent {
-  height: 140%;
-}
-
 .parallax {
   min-height: 100vh;
 }
