@@ -134,7 +134,7 @@ p {
 }
 
 .parallax {
-  min-height: 100vh;
+  height: 100%;
 }
 
 .card {
