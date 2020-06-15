@@ -52,7 +52,7 @@ li img {
 main {
   width: 45%;
   background-color: #ece6d3;
-  height: 160%;
+  height: 140%;
 }
 
 #paper {
@@ -64,10 +64,10 @@ main {
 #paper::before {
   content: "";
   width: 2px;
-  height: 160%;
+  height: 140%;
   position: absolute;
   top: 0%;
-  left: 5%;
+  left: 4%;
   background-color: rgba(255, 0, 0, 0.6);
 }
 
@@ -130,7 +130,7 @@ p {
 }
 
 #resumeContent {
-  height: 160%;
+  height: 140%;
 }
 
 .parallax {
