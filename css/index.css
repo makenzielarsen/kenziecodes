@@ -56,8 +56,8 @@ main {
 }
 
 .stickyNotes {
-  position: relative;
-  margin-left: 38%;
+  position: absolute;
+  left: 38%;
   font-family: "Indie Flower", cursive;
 }
 
@@ -183,16 +183,6 @@ main {
   width: 250px;
   margin-left: 50px;
   margin-top: -5px;
-}
-
-footer {
-  height: 100px;
-  width: 100%;
-  margin-left: 995px;
-}
-
-footer a {
-  text-decoration: none;
 }
 
 @media print {
