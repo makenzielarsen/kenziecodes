@@ -58,7 +58,7 @@ main {
 
 #paper {
   position: absolute;
-  top: 20%;
+  top: 50%;
 }
 
 #paper::before {
