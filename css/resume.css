@@ -52,7 +52,7 @@ li img {
 main {
   width: 45%;
   background-color: #ece6d3;
-  height: 1750px;
+  height: 110%;
 }
 
 #paper {
@@ -64,7 +64,7 @@ main {
 #paper::before {
   content: "";
   width: 2px;
-  height: 1750px;
+  height: 110%;
   position: absolute;
   top: 0%;
   left: 5%;
@@ -72,7 +72,7 @@ main {
 }
 
 .pattern {
-  height: 1550px;
+  height: 90%;
   background-image: repeating-linear-gradient(
     #ece6d3 0px,
     #ece6d3 24px,
@@ -130,7 +130,7 @@ p {
 }
 
 #resumeContent {
-  height: 1200px;
+  height: 80%;
 }
 
 .parallax {
@@ -141,17 +141,6 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.3s;
   padding: 2px 16px;
-}
-
-footer {
-  height: 100px;
-  width: 100%;
-  margin-left: 995px;
-  font-family: Copperplate, "Copperplate Gothic Light";
-}
-
-footer a {
-  text-decoration: none;
 }
 
 @media print {
