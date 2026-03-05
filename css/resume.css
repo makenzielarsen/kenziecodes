@@ -51,7 +51,7 @@ html {
 }
 
 main {
-  width: 45%;
+  width: 50%;
   background-color: #ece6d3;
   /* height: 140%; */
 }
@@ -60,6 +60,7 @@ main {
   position: absolute;
   top: 80%;
   left: 27%;
+  min-width: 'fit-content';
 }
 
 #paper::before {
@@ -79,10 +80,6 @@ main {
     #ece6d3 24px,
     teal 25px
   );
-}
-
-#resumeContent {
-  /* height: 110%; */
 }
 
 h1 {
@@ -132,13 +129,12 @@ p {
 
 #skills {
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
   width: 100%;
   position: relative;
   background-color: transparent;
   font-family: "Indie Flower", cursive;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skillsItem {
@@ -154,6 +150,14 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.3s;
   padding: 2px 16px;
+}
+
+.resumeCategory {
+  margin-bottom: 0px;
+}
+
+.experienceTitle {
+  margin-bottom: 0px;
 }
 
 @media print {
