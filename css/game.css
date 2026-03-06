@@ -1,0 +1,274 @@
+body {
+  margin: 0px;
+  background-image: linear-gradient(blue, teal);
+  font-family: "Amatic SC", cursive;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100vh;
+}
+
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navItems {
+  font-family: Copperplate, "Copperplate Gothic Light";
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navItems a {
+  color: white;
+  text-decoration: none;
+  min-height: 100%;
+  align-content: center;
+  padding-right: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  padding: 100px;
+  padding-bottom: 0px;
+}
+
+.innerMenu {
+  flex-direction: column;
+}
+
+.pair {
+  position: relative;
+  width: 50%;
+  align-content: space-evenly;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.pair button {
+  flex: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  font-size: 35px;
+  padding: 12px 24px;
+  border: none;
+  background: none;
+  color: white;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.leftMenu .pair button {
+  left: 60%;
+  top: 25%;
+}
+
+#customize button {
+  left: 42%;
+  top: 25%;
+}
+
+#credits button {
+  left: 55%;
+  top: 35%;
+}
+
+.pair img {
+  height: 200px;
+}
+
+.pair button:hover {
+  color: green;
+}
+
+.newGame {
+  display: none;
+  height: 90%;
+  flex-direction: column;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  min-height: 90%;
+}
+
+.newGame canvas {
+  width: 60%;
+  height: 90%;
+  border: 1px solid black;
+  position: absolute;
+  top: 5%;
+  left: 21%;
+}
+
+.images {
+  display: none;
+}
+
+.gameStats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+#timer {
+  display: flex;
+  flex-direction: row;
+}
+
+.emptyLoadBar {
+  height: 20px;
+  width: 300px;
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.loadBar {
+  height: 20px;
+  width: 300px;
+  background-image: linear-gradient(green, yellow);
+}
+
+#lives {
+  margin-left: 10%;
+  margin-right: 30%;
+}
+
+.highScores {
+  display: none;
+  height: 80%;
+  font-size: 30px;
+  color: white;
+  justify-content: space-between;
+}
+
+.col {
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.highScores a {
+  align-self: flex-end;
+  color: white;
+  text-decoration: none;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+}
+
+.highScores a:hover {
+  color: green;
+}
+
+#playersDiv {
+  margin-left: 10%;
+}
+
+#scoresDiv {
+  margin-right: 10%;
+}
+
+.customizeControls {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  height: 80%;
+  font-size: 40px;
+  color: white;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+  margin-top: 0px;
+}
+
+.customizeControls a {
+  color: white;
+  text-decoration: none;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+}
+
+.customizeControls a:hover {
+  color: green;
+}
+
+.controlRow {
+  flex-direction: row;
+}
+
+.controlRow button {
+  background-color: lightseagreen;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-left: 20px;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.controlRow button:hover {
+  opacity: 1;
+}
+
+.credits {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  height: 80%;
+  font-size: 70px;
+  color: white;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+  margin-top: 0px;
+}
+
+.credits h1 {
+  color: green;
+  margin: -30px;
+}
+
+.credits a {
+  color: white;
+  text-decoration: none;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+}
+
+.credits a:hover {
+  color: green;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexRow img {
+  margin: 70px;
+  margin-bottom: 10px;
+  height: 100px;
+}

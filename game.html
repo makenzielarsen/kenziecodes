@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>KenzieCodes</title>
+        <link
+        rel="stylesheet"
+        type="text/css"
+        href="css/game.css"
+        media="screen"
+        />
+        <link
+        rel="stylesheet"
+        type="text/css"
+        href="css/printIndex.css"
+        media="print"
+        />
+        <link rel="icon" href="resources/peace.gif" type="image/icon" />
+        <link
+        href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"
+        rel="stylesheet"
+        />
+        <meta charset="utf-8" />
+        <meta name="description" content="A website about Makenzie Larsen" />
+        <meta name="keywords" content="Developer,Frontend,HTML,CSS,Javascript" />
+        <meta name="author" content="Makenzie Larsen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "UA-162291836-1");
+        </script>
+    </head>
+    <body>
+    <nav>
+        <img
+            src="resources/peace.gif"
+            height="50"
+            alt="Colorful Peace Sign"
+            onclick="window.location.href = 'index.html';"
+        />
+        <div class="navItems">
+            <a href="index.html">HOME</a>
+            <a href="resume.html">RESUME</a>
+            <a>GAME</a>
+        </div>
+    </nav>
+    <main>
+        <!-- Menu Div -->
+        <div class="menu" id="menuDiv">
+        <div class="innerMenu leftMenu">
+            <div class="pair">
+                <img src="resources/lilypad.png" />
+                <button onclick="displayGame()">New Game</button>
+            </div>
+            <div class="pair">
+                <img src="resources/lilypad.png" />
+                <button onclick="displayHighScores()">High Scores</button>
+            </div>
+        </div>
+        <div class="innerMenu">
+            <div class="pair" id="customize">
+                <img src="resources/lilypad.png" />
+                <button onclick="displayCustomizeControls()">
+                    Customize Controls
+                </button>
+            </div>
+            <div class="pair" id="credits">
+                <img src="resources/lilypad.png" />
+                <button onclick="displayCredits()">Credits</button>
+            </div>
+        </div>
+        </div>
+        <!-- Game Div -->
+        <div class="newGame" id="gameDiv">
+            <div class="gameStats">
+                <div id="timer">
+                <label>Time: </label>
+                <div class="emptyLoadBar">
+                    <div class="loadBar" id="loadBar"></div>
+                </div>
+                </div>
+                <div id="lives"></div>
+                <label id="score"></label>
+            </div>
+            <div class="wrapper">
+                <canvas id="floorCanvas"></canvas>
+                <canvas id="gameCanvas"></canvas>
+            </div>
+            <div class="images">
+                <img width="220" height="277" src="./resources/topBorder.png" />
+                <img width="220" height="277" src="./resources/middleBorder.png" />
+            </div>
+        </div>
+        <!-- High Scores Div -->
+        <div class="highScores" id="scoresDiv">
+        <div class="col" id="playersDiv">
+            <h2>Player Name</h2>
+            <div id="players"></div>
+        </div>
+        <a href="game.html">BACK HOME</a>
+        <div class="col" id="scoresDiv">
+            <h2>Score</h2>
+            <div id="scores"></div>
+        </div>
+        </div>
+        <!-- Customize Controls Div -->
+        <div class="customizeControls" id="controlsDiv">
+        <div class="controlRow">
+            <label id="forwardLabel">FORWARD KEY: </label>
+            <button onclick="forwardButtonClicked()" id="forwardButton">
+            SET KEY
+            </button>
+        </div>
+        <div class="controlRow">
+            <label id="backwardLabel">BACKWARD KEY: </label>
+            <button onclick="backwardButtonClicked()" id="backwardButton">
+            SET KEY
+            </button>
+        </div>
+        <div class="controlRow">
+            <label id="rightLabel">RIGHT KEY: </label>
+            <button onclick="rightButtonClicked()" id="rightButton">
+            SET KEY
+            </button>
+        </div>
+        <div class="controlRow">
+            <label id="leftLabel">LEFT KEY: </label>
+            <button onclick="leftButtonClicked()" id="leftButton">
+            SET KEY
+            </button>
+        </div>
+        <a href="game.html">BACK HOME</a>
+        </div>
+        <!-- Credits Div -->
+        <div class="credits" id="creditsDiv">
+        <div class="flexRow">
+            <img src="resources/credits.gif" />
+            <h1>CREDITS</h1>
+            <img src="resources/credits.gif" />
+        </div>
+
+        <p>DESIGNED AND CODED BY: MAKENZIE LARSEN</p>
+        <p>
+            SOUNDS AND ART FROM:
+            <a href="https://opengameart.org/">OPENGAMEART.ORG</a>
+        </p>
+        <a href="game.html">BACK HOME</a>
+        </div>
+    </main>
+    </body>
+    <script src="js/persistence.js"></script>
+    <script src="js/random.js"></script>
+    <script src="js/particleSystem.js"></script>
+    <script src="js/gameControls.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/gamePlay.js"></script>
+</html>
