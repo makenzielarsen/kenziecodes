@@ -26,7 +26,7 @@ let frogsHome = [
   {
     x: 10,
     y: 10,
-    width: 30,
+    width: 40,
     height: 18,
     occupado: false,
     alligatorHome: false,
@@ -35,7 +35,7 @@ let frogsHome = [
   {
     x: 74.05,
     y: 10,
-    width: 30,
+    width: 40,
     height: 18,
     occupado: false,
     alligatorHome: false,
@@ -44,7 +44,7 @@ let frogsHome = [
   {
     x: 138,
     y: 10,
-    width: 30,
+    width: 40,
     height: 18,
     occupado: false,
     alligatorHome: false,
@@ -53,7 +53,7 @@ let frogsHome = [
   {
     x: 201.05,
     y: 10,
-    width: 30,
+    width: 40,
     height: 18,
     occupado: false,
     alligatorHome: false,
@@ -62,7 +62,7 @@ let frogsHome = [
   {
     x: 265,
     y: 10,
-    width: 30,
+    width: 40,
     height: 18,
     occupado: false,
     alligatorHome: false,
@@ -401,7 +401,7 @@ function update(elapsedTime) {
     if (second >= 100) {
       timer = timer - 0.1;
       let loadBar = document.getElementById("loadBar");
-      loadBar.style.width = timer * 10;
+      loadBar.style.width = `${timer * 10}px`;
       second = 0;
 
       if (timer <= 0) {
@@ -430,7 +430,7 @@ function update(elapsedTime) {
   if (second >= 100) {
     timer = timer - 0.1;
     let loadBar = document.getElementById("loadBar");
-    loadBar.style.width = timer * 10;
+    loadBar.style.width = `${timer * 10}px`;
     second = 0;
 
     if (timer <= 0) {
