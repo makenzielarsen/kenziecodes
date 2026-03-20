@@ -80,6 +80,11 @@ nav {
   top: 25%;
 }
 
+.cusomizeControlDescription {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 #credits button {
   left: 55%;
   top: 35%;
